@@ -1,0 +1,8 @@
+<owl-directive
+    data-options="{ autoPlay: 2000, stopOnHover: true, slideSpeed : 300, paginationSpeed : 400, singleItem : true, navigation : true}">
+    <div owl-directive-item="" layout="column" layout-align="center center" ng-repeat="tip in tips" class="item">
+        <div class="md-display-4">{{ tip.sortOrder }}</div>
+        <div class="md-display-2">{{ tip.text }}</div>
+    </div>
+</owl-directive>
+

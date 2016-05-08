@@ -1,0 +1,12 @@
+<div id="assessment-wrapper" layout="row" layout-align="center center">
+    <div id="assessment-container" layout="column" layout-align="center center">
+
+        <h1>{{ assessment.question }}?</h1>
+        <md-radio-group ng-model="submittedAnswer.answer">
+            <md-radio-button value="{{ assessment.answers[1] }}">{{ assessment.answers[1] }}</md-radio-button>
+            <md-radio-button value="{{ assessment.answers[2] }}">{{ assessment.answers[2] }}</md-radio-button>
+        </md-radio-group>
+        <md-button class="md-raised md-primary" ng-click="submit()">Submit your answer</md-button>
+
+    </div>
+</div>

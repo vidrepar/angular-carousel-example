@@ -1,0 +1,22 @@
+<md-dialog>
+    <form>
+        <md-toolbar>
+            <div class="md-toolbar-tools" layout="row" layout-align="center center">
+                <h4>Thanks, you're awesome!</h4>
+            </div>
+        </md-toolbar>
+        <md-dialog-content>
+            <div class="md-dialog-content" layout="row" layout-align="center center">
+                <h1>You answered <strong>{{ answer | uppercase }}</strong></h1>
+            </div>
+        </md-dialog-content>
+        <md-dialog-actions layout="row" layout-align="center end">
+            <md-button ng-click="closeDialog()" class="md-raised md-primary">
+                Close popup
+            </md-button>
+            <md-button ng-click="passwordTips()" class="md-raised md-primary md-button">
+                See password tips
+            </md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>
